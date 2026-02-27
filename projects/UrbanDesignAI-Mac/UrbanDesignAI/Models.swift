@@ -5,6 +5,7 @@
 
 import Foundation
 import SwiftUI
+import Combine
 
 // MARK: - 设计项目
 class DesignProject: ObservableObject, Identifiable {
