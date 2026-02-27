@@ -1,0 +1,26 @@
+name: Keep Codespace Alive
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'  # 每10分钟运行一次
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  keepalive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      - name: Keep Alive
+        run: |
+          echo "Keeping codespace alive at $(date)"
+          echo "Last activity: $(date -u +%Y-%m-%dT%H:%M:%SZ)" > .codespace-activity.log
+          
+      - name: Commit activity log
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .codespace-activity.log
+          git diff --staged --quiet || git commit -m "Keep alive: $(date -u +%Y-%m-%d %H:%M:%S UTC)"
+          git push
