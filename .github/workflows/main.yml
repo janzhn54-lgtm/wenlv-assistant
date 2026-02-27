@@ -1,0 +1,19 @@
+name: Keep Codespace Alive
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+
+jobs:
+  keepalive:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          echo "Last activity: $(date)" > .codespace-activity.log
+          git config user.email "action@github.com"
+          git config user.name "GitHub Action"
+          git add .
+          git commit -m "Keep alive: $(date)" || true
+          git push 
