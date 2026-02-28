@@ -1,0 +1,19 @@
+{
+  "agent": "投资金融专家",
+  "topic": "文旅项目投资分析",
+  "timestamp": "2026-02-28T02:56:12.376271",
+  "qa_pairs": [
+    {
+      "question": "文旅项目投资测算的关键指标有哪些？如何计算？",
+      "answer": "Error: HTTPSConnectionPool(host='api.deepseek.com', port=443): Read timed out."
+    },
+    {
+      "question": "成功的文旅项目融资模式有哪些案例？",
+      "answer": "Error: HTTPSConnectionPool(host='api.deepseek.com', port=443): Read timed out."
+    },
+    {
+      "question": "如何评估文旅项目的投资回报周期？",
+      "answer": "Error: HTTPSConnectionPool(host='api.deepseek.com', port=443): Read timed out."
+    }
+  ]
+}

@@ -12,19 +12,68 @@ Before doing anything else:
 
 1. Read `SOUL.md` — this is who you are
 2. Read `USER.md` — this is who you're helping
-3. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
-4. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
+3. Read `GLOBAL_CONTEXT.md` — 全局上下文（跨session状态跟踪）
+4. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
+5. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
 
 Don't ask permission. Just do it.
 
-## Memory
+**⚠️ 重要：** 如果不记得某些事情，先检查GLOBAL_CONTEXT.md，不要直接说"不记得"。
 
-You wake up fresh each session. These files are your continuity:
+## Memory System (v2.0 - 已升级)
 
-- **Daily notes:** `memory/YYYY-MM-DD.md` (create `memory/` if needed) — raw logs of what happened
-- **Long-term:** `MEMORY.md` — your curated memories, like a human's long-term memory
+你醒来时记忆是空的。这些文件是你的连续性：
 
-Capture what matters. Decisions, context, things to remember. Skip the secrets unless asked to keep them.
+### 分层记忆架构
+
+```
+┌─────────────────────────────────────────┐
+│  第一层：核心身份                         │
+│  SOUL.md + USER.md + IDENTITY.md         │
+│  （必读，建立"我是谁"和"我在帮谁"）        │
+├─────────────────────────────────────────┤
+│  第二层：全局状态 ⭐ 新增                  │
+│  GLOBAL_CONTEXT.md + KEYWORD_INDEX.md    │
+│  （跨session状态跟踪，快速检索）           │
+├─────────────────────────────────────────┤
+│  第三层：近期记忆                         │
+│  memory/YYYY-MM-DD.md + sessions/        │
+│  （今天+昨天，详细记录）                   │
+├─────────────────────────────────────────┤
+│  第四层：长期记忆                         │
+│  MEMORY.md（仅主会话）                     │
+│  （精华提炼，安全存储）                    │
+└─────────────────────────────────────────┘
+```
+
+### 关键原则
+
+1. **Token优化**：每层记忆精炼摘要，总启动消耗 < 5K tokens
+2. **跨session一致**：GLOBAL_CONTEXT.md 确保"小白"始终记得
+3. **快速检索**：KEYWORD_INDEX.md 支持关键词搜索
+4. **自动维护**：心跳任务定期整理和归档
+
+### 如果不记得怎么办？
+
+**错误做法：** "我不记得了"
+**正确做法：** 
+1. 先查 GLOBAL_CONTEXT.md
+2. 再查 KEYWORD_INDEX.md
+3. 搜索 memory/sessions/ 摘要
+4. 最后才说"让我查一下"
+
+### 更新规则
+
+- **重要决策** → 立即更新 GLOBAL_CONTEXT.md
+- **每日总结** → 更新 memory/YYYY-MM-DD.md
+- **长期知识** → 每周整理到 MEMORY.md
+- **关键词** → 实时更新 KEYWORD_INDEX.md
+
+---
+
+## Old Memory Section (Deprecated)
+
+(保留原有内容，但已整合到上面的分层架构中)
 
 ### 🧠 MEMORY.md - Your Long-Term Memory
 

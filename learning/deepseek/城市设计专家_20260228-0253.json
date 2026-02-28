@@ -1,0 +1,19 @@
+{
+  "agent": "城市设计专家",
+  "topic": "滨水文旅小镇规划",
+  "timestamp": "2026-02-28T02:53:21.944609",
+  "qa_pairs": [
+    {
+      "question": "全球最著名的10个滨水文旅小镇案例有哪些？它们的规划亮点是什么？",
+      "answer": "Error: HTTPSConnectionPool(host='api.deepseek.com', port=443): Read timed out."
+    },
+    {
+      "question": "滨水小镇的空间结构通常有哪些模式？各自的优缺点？",
+      "answer": "Error: HTTPSConnectionPool(host='api.deepseek.com', port=443): Read timed out."
+    },
+    {
+      "question": "如何处理滨水小镇的水岸线和建筑退界？",
+      "answer": "Error: HTTPSConnectionPool(host='api.deepseek.com', port=443): Read timed out."
+    }
+  ]
+}
