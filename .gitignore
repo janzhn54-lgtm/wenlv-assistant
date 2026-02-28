@@ -1,0 +1,6 @@
+.env.local
+.env
+*.key
+*.pem
+config.yaml
+openclaw.json
