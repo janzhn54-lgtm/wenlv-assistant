@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "space_type": "展厅",
+    "width": 15,
+    "depth": 10,
+    "height": 4.0,
+    "entrance": "south",
+    "style": "宋韵",
+    "has_reception": true,
+    "has_display": true,
+    "has_rest": true,
+    "has_office": false,
+    "natural_light": "优秀",
+    "target_audience": "游客"
+  },
+  "zones": [
+    {
+      "name": "入口",
+      "pos": [
+        7.5,
+        0
+      ],
+      "area": 0
+    },
+    {
+      "name": "接待区",
+      "position": [
+        1.0,
+        0.5
+      ],
+      "size": [
+        3.0,
+        2.5
+      ],
+      "area": 7.5
+    },
+    {
+      "name": "展示区",
+      "position": [
+        4.5,
+        0.5
+      ],
+      "size": [
+        9.0,
+        8.5
+      ],
+      "area": 76.5
+    },
+    {
+      "name": "休息区",
+      "position": [
+        12.5,
+        8.0
+      ],
+      "size": [
+        2.0,
+        1.5
+      ],
+      "area": 3.0
+    }
+  ],
+  "prompts": {
+    "main": "cultural exhibition hall, display shelves, informational panels, visitors viewing exhibits, 150sqm space, 4.0m ceiling height, Song Dynasty aesthetic, elegant simplicity, natural materials, muted earth tones, functional zones including 接待区, 展示区, 休息区, 优秀 natural lighting, clean lines, professional interior design, warm atmosphere",
+    "negative": "cluttered, messy, dark, outdated, cheap materials, distorted perspective",
+    "variations": [
+      {
+        "style": "新中式",
+        "prompt": "cultural exhibition hall, display shelves, informational panels, visitors viewing exhibits, 150sqm space, 4.0m ceiling height, New Chinese style, minimalist wooden furniture, white walls with ink wash accents, functional zones including 接待区, 展示区, 休息区, 优秀 natural lighting, clean lines, professional interior design, warm atmosphere"
+      },
+      {
+        "style": "工业风",
+        "prompt": "cultural exhibition hall, display shelves, informational panels, visitors viewing exhibits, 150sqm space, 4.0m ceiling height, Industrial loft style, exposed brick and steel, vintage lighting, functional zones including 接待区, 展示区, 休息区, 优秀 natural lighting, clean lines, professional interior design, warm atmosphere"
+      },
+      {
+        "style": "北欧",
+        "prompt": "cultural exhibition hall, display shelves, informational panels, visitors viewing exhibits, 150sqm space, 4.0m ceiling height, Scandinavian design, light wood, white and grey palette, cozy hygge atmosphere, functional zones including 接待区, 展示区, 休息区, 优秀 natural lighting, clean lines, professional interior design, warm atmosphere"
+      }
+    ]
+  },
+  "parameters": {
+    "aspect_ratio": "16:9",
+    "style_preset": "Architectural Photography",
+    "quality_tags": "8k, photorealistic, architectural visualization, professional photography"
+  }
+}
